@@ -22,6 +22,7 @@ mongoose.connect(databaseUrl, { useNewUrlParser: true, promiseLibrary: require('
   .catch((err) => console.error(err));
 var db = mongoose.connection;
 
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ 'extended': 'false' }));
